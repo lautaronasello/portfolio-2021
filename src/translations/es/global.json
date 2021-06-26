@@ -1,0 +1,39 @@
+{
+    "header":{
+        "name":"Hola, soy Lautaro!",
+        "title":"Desarrollador Frontend Web Trainee",
+        "description":"Este es mi portfolio web. Aqui podrás encontrar mas informacion sobre mi y mis proyectos.",
+        "btn": "CONECTA CONMIGO"
+    },
+    "social":{
+        "title":"Contacto",
+        "description":"Si Querés contactarme, sentite libre de mandarme un mensaje por mis redes sociales o un mail."
+    },
+    "profile":{
+        "title":"Proyectos",
+        "menos-caos":"@menoscaosporfavor landind page con html, css, bootstrap, react js. y emailjs.",
+        "snake-game":"El tradicional y simple juego de la viborita. Desarrollado con HTML5, CSS y JavaScript.",
+        "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavasCript-React consumiendo la API de Pokeappi.",
+        "github":"También tengo otros proyectos en desarrollo que podés mirar en Github"
+    },
+    "skills":{
+        "title":"Habilidades",
+        "html5":"El lenguaje de marcado estándar HTML5. Tengo nivel Medio-alto para poder construir una gran cantidad de páginas web.",
+        "css":"El lenguaje de diseño gráfico en cascada para definir y crear una página web.",
+        "javascript":"Este idioma agrega la funcionalidad a la página web. Requiere lógica y pensamiento lateral.",
+        "react":"El framework de JavaScript creado por Facebook. Estoy aprendiendo constantemente de este mismo. Este es uno de mis favoritos.",
+        "strapi":"Strapi es el headless CMS de próxima generación, de código abierto, javascript, que permite crear, administrar y exponer experiencias ricas en contenido a cualquier dispositivo digital.",
+        "bootstrap":"El framework de CSS mas usado para diseño web responsive. También en este momento estoy aprendiendo Chakra UI para React",
+        "firebase":"Plataforma de desarrollo de aplicaciones de Google que ayuda a crear, mejorar y hacer crecer la aplicación",
+        "github":"Github es una plataforma web que se utiliza para el control de versiones. Git simplifica el proceso de trabajar con otras personas y facilita la colaboración en proyectos."
+    },
+    "about":{
+        "title":"Sobre mi",
+        "description":"¡Hola! Mi nombre es Lautaro Nasello y soy desarrollador web. Tengo 23 años y vivo en Córdoba, Argentina. Aparte del desarrollar aplicaciones web, soy estudiante de Psicología en la UNC, toco la guitarra en mis tiempos libres y también sigo aprendiendo nuevas tecnologías porque me encanta crear cosas nuevas. Siempre quiero conocer nuevas formas de simplificar lo que hago."
+    },
+    "navigate":{
+        "languaje":"Idioma"
+    }
+
+}
+

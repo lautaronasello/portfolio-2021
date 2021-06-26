@@ -1,0 +1,39 @@
+{
+    "header":{
+        "name":"Hi I'm Lautaro!",
+        "title":"Frontend Developer Web Trainee",
+        "description":"This is my web portfolio. Here you will find more information about me and my projects.",
+        "btn": "CONNECT WHITH ME"
+    },
+    "social":{
+        "title":"Contact",
+        "description":"If you want to reach me out, feel free to send me a message on my social media or email!"
+    },
+    "profile":{
+        "title":"Projects",
+        "menos-caos":"@menoscaosporfavor landind page whit html, css, bootstrap, react and emailjs.",
+        "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
+        "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
+        "github":"Also have other projects in development that can be seen on github!"
+    },
+    "skills":{
+        "title":"Skills",
+        "html5":"The standar HTML5 markup languaje. I have Medium-high level to be able to build a large number of web pages.",
+        "css":"The graphic design language in cascading to define and create a web page.",
+        "javascript":"This language add the functionality to the web page. Requires logic and lateral think.",
+        "react":"The JavaScript Framework created by Facebook. Im constantly learnig from this framework. This is one of my favorites.",
+        "strapi":"Strapi is the next-gen headless CMS, open-source, javascript, enabling content-​rich experiences to be created, managed and exposed to any digital device.",
+        "bootstrap":"CSS framework for responsive web design. Also right now im learning Chakra UI for React",
+        "firebase":"Google application development platform that helps you build, improve, and grow your app",
+        "github":"Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects."
+    },
+    "about":{
+        "title":"About",
+        "description":"Hey there! My name is Lautaro Nasello, and I'm a web developer. I'm 23 years old, and I lived in Córdoba, Argentina. Apart from coding, I'm a student of Psychology in UNC, play guitar in my free times and also I keep learning new technologies because I love create new things. I always want to know new ways to simplify what i do."
+    },
+    "navigate":{
+        "languaje":"Languaje"
+    }
+
+}
+
