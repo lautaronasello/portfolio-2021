@@ -3,17 +3,18 @@
         "name":"Hola, soy Lautaro!",
         "title":"Desarrollador Frontend Web Trainee",
         "description":"Este es mi portfolio web. Aqui podrás encontrar mas informacion sobre mi y mis proyectos.",
-        "btn": "CONECTA CONMIGO"
+        "btn": "LAUTARO NASELLO"
     },
     "social":{
         "title":"Contacto",
-        "description":"Si Querés contactarme, sentite libre de mandarme un mensaje por mis redes sociales o un mail."
+        "description":"Queres que trabajemos juntos? Mándame un mail o un mensaje con tu propuesta!",
+        "spec":"Este portfolio fue realizado con React js, Chakra UI y Firebase entre otros."
     },
     "profile":{
         "title":"Proyectos",
-        "menos-caos":"@menoscaosporfavor landind page con html, css, bootstrap, react js. y emailjs.",
+        "menos-caos":"Landind page con React js, Strapi, Node js, Firebase y Heroku. (Espera que heroku despierte)",
         "snake-game":"El tradicional y simple juego de la viborita. Desarrollado con HTML5, CSS y JavaScript.",
-        "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavasCript-React consumiendo la API de Pokeappi.",
+        "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavaScript-React consumiendo la API de Pokeappi.",
         "github":"También tengo otros proyectos en desarrollo que podés mirar en Github"
     },
     "skills":{
@@ -25,14 +26,18 @@
         "strapi":"Strapi es el headless CMS de próxima generación, de código abierto, javascript, que permite crear, administrar y exponer experiencias ricas en contenido a cualquier dispositivo digital.",
         "bootstrap":"El framework de CSS mas usado para diseño web responsive. También en este momento estoy aprendiendo Chakra UI para React",
         "firebase":"Plataforma de desarrollo de aplicaciones de Google que ayuda a crear, mejorar y hacer crecer la aplicación",
-        "github":"Github es una plataforma web que se utiliza para el control de versiones. Git simplifica el proceso de trabajar con otras personas y facilita la colaboración en proyectos."
+        "github":"GitHub es una plataforma web que se utiliza para el control de versiones. Git simplifica el proceso de trabajar con otras personas y facilita la colaboración en proyectos."
     },
     "about":{
         "title":"Sobre mi",
-        "description":"¡Hola! Mi nombre es Lautaro Nasello y soy desarrollador web. Tengo 23 años y vivo en Córdoba, Argentina. Aparte del desarrollar aplicaciones web, soy estudiante de Psicología en la UNC, toco la guitarra en mis tiempos libres y también sigo aprendiendo nuevas tecnologías porque me encanta crear cosas nuevas. Siempre quiero conocer nuevas formas de simplificar lo que hago."
+        "description":"Hola! Soy Lautaro Nasello, tengo 23 años y vivo en Córdoba, Argentina. Amo desarrollar aplicaciones web! Además estudio Psicología en la UNC. Aplicar las nociones de esta disciplina me ayuda para crear productos más intuitivos e innovadores. Me interesan los desafíos y aprender cosas nuevas."
     },
     "navigate":{
-        "languaje":"Idioma"
+        "language":"ES",
+        "proyects": "Proyectos",
+        "about": "Sobre mi",
+        "skills":"Habilidades",
+        "contact":"Contacto"
     }
 
 }

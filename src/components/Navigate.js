@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, Heading } from '@chakra-ui/layout';
 import { FaChevronDown, FaMoon, FaSun } from 'react-icons/fa';
+import useWindowDimensions from './useWindowDimensions.js';
 import {
   IconButton,
   Spacer,
@@ -10,58 +11,205 @@ import {
   MenuButton,
   Button,
   MenuList,
+  HStack,
   MenuItem,
+  Text,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-
+import { Link } from 'react-scroll';
 export default function Navigate() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isLight = colorMode === 'light';
   const bg = useColorModeValue('#fafafa', 'gray.700');
   const [t, i18n] = useTranslation('global');
+  const { width } = useWindowDimensions();
+
   return (
-    <Flex
-      p={2}
-      bg={bg}
-      pe={5}
-      w='100%'
-      pos='fixed'
-      top='0rem'
-      right='0'
-      zIndex='2'
-      align='center'
-    >
-      <Heading
-        ml='8'
-        size='md'
-        fontFamily='montserrat'
-        fontSize='20'
-        fontWeight='Bold'
-      >
-        Lautaro Nasello
-      </Heading>
-      <Spacer />
-      <Menu>
-        <MenuButton
-          bg='transparent'
-          rounded={false}
-          as={Button}
-          rightIcon={<FaChevronDown />}
-        >
-          {t('navigate.languaje')}
-        </MenuButton>
-        <MenuList minW='100px'>
-          <MenuItem onClick={() => i18n.changeLanguage('es')}>ES</MenuItem>
-          <MenuItem onClick={() => i18n.changeLanguage('en')}>EN</MenuItem>
-        </MenuList>
-      </Menu>
-      <IconButton
-        ml={3}
-        isRound={true}
+    <>
+      <Flex
+        p={2}
         bg={bg}
-        icon={isLight ? <FaSun /> : <FaMoon />}
-        onClick={toggleColorMode}
-      />
-    </Flex>
+        pe={5}
+        w='100%'
+        pos='fixed'
+        top='0rem'
+        right='0'
+        zIndex='2'
+        align='center'
+        shadow='lg'
+      >
+        <Link
+          activeClass='active'
+          to='inicio'
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1000}
+        >
+          <Heading
+            ml='8'
+            size='md'
+            cursor='pointer'
+            fontFamily='montserrat'
+            fontSize='20'
+            fontWeight='Bold'
+          >
+            {width > 750 ? 'Lautaro Nasello' : 'Lautaro N.'}
+          </Heading>
+        </Link>
+        <Spacer />
+        {width > 750 && (
+          <>
+            <HStack spacing={3}>
+              <Link
+                activeClass='active'
+                to='profile'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                <Text cursor='pointer'>{t('navigate.proyects')} </Text>
+              </Link>
+              <Link
+                activeClass='active'
+                to='about'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                <Text cursor='pointer'>{t('navigate.about')} </Text>
+              </Link>
+              <Link
+                activeClass='active'
+                to='skills'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                <Text cursor='pointer'>{t('navigate.skills')} </Text>
+              </Link>
+              <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+              >
+                <Text cursor='pointer'>{t('navigate.contact')} </Text>
+              </Link>
+            </HStack>
+            <Menu>
+              <MenuButton
+                maxW='70px'
+                p={1}
+                ml={3}
+                bg='transparent'
+                rounded={false}
+                as={Button}
+                rightIcon={<FaChevronDown />}
+              >
+                {t('navigate.language')}
+              </MenuButton>
+              <MenuList minW='100px'>
+                {t('navigate.language') === 'ES' ? (
+                  <MenuItem onClick={() => i18n.changeLanguage('en')}>
+                    EN
+                  </MenuItem>
+                ) : (
+                  <MenuItem onClick={() => i18n.changeLanguage('es')}>
+                    ES
+                  </MenuItem>
+                )}
+              </MenuList>
+            </Menu>
+          </>
+        )}
+        {width <= 750 && (
+          <Menu>
+            <MenuButton
+              bg='transparent'
+              rounded={false}
+              as={Button}
+              rightIcon={<FaChevronDown />}
+            >
+              Menu
+            </MenuButton>
+            <MenuList>
+              <MenuItem>
+                <Link
+                  activeClass='active'
+                  to='profile'
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                >
+                  <Text cursor='pointer'>{t('navigate.proyects')} </Text>
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link
+                  activeClass='active'
+                  to='about'
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                >
+                  <Text cursor='pointer'>{t('navigate.about')} </Text>
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                {' '}
+                <Link
+                  activeClass='active'
+                  to='skills'
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                >
+                  <Text cursor='pointer'>{t('navigate.skills')} </Text>
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                {' '}
+                <Link
+                  activeClass='active'
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                >
+                  <Text cursor='pointer'>{t('navigate.contact')} </Text>
+                </Link>
+              </MenuItem>
+              {t('navigate.language') === 'ES' ? (
+                <MenuItem onClick={() => i18n.changeLanguage('en')}>
+                  Cambiar a Inglés
+                </MenuItem>
+              ) : (
+                <MenuItem onClick={() => i18n.changeLanguage('es')}>
+                  Change to Spanish
+                </MenuItem>
+              )}
+            </MenuList>
+          </Menu>
+        )}
+
+        <IconButton
+          ml={3}
+          isRound={true}
+          bg={bg}
+          icon={isLight ? <FaSun /> : <FaMoon />}
+          onClick={toggleColorMode}
+        />
+      </Flex>
+    </>
   );
 }

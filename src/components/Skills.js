@@ -61,17 +61,17 @@ export default function Skills() {
     {
       id: 8,
       icon: FaGithub,
-      title: 'Github',
+      title: 'GitHub',
       text: `${t('skills.github')}`,
     },
   ];
 
   return (
-    <VStack spacing={10}>
+    <VStack spacing={10} id='skills'>
       <Box fontSize='48px' fontWeight='bold'>
         {t('skills.title')}
       </Box>
-      <SimpleGrid alignContent='center' columns={[1, 2, 4]} gap='15px'>
+      <SimpleGrid alignContent='center' columns={[1, 2, 4]} gap={['15px']}>
         {skills.map((data) => (
           <BoxSkills
             key={data.id}

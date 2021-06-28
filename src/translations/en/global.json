@@ -3,15 +3,17 @@
         "name":"Hi I'm Lautaro!",
         "title":"Frontend Developer Web Trainee",
         "description":"This is my web portfolio. Here you will find more information about me and my projects.",
-        "btn": "CONNECT WHITH ME"
+        "btn": "LAUTARO NASELLO"
     },
     "social":{
         "title":"Contact",
-        "description":"If you want to reach me out, feel free to send me a message on my social media or email!"
+        "description":"Let’s work together! Send me a message or an email with your offer!",
+        "spec":"This portfolio was made with React js, Chakra UI and Firebase among other things."
+
     },
     "profile":{
         "title":"Projects",
-        "menos-caos":"@menoscaosporfavor landind page whit html, css, bootstrap, react and emailjs.",
+        "menos-caos":"Landind page whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
         "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
         "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
         "github":"Also have other projects in development that can be seen on github!"
@@ -29,10 +31,14 @@
     },
     "about":{
         "title":"About",
-        "description":"Hey there! My name is Lautaro Nasello, and I'm a web developer. I'm 23 years old, and I lived in Córdoba, Argentina. Apart from coding, I'm a student of Psychology in UNC, play guitar in my free times and also I keep learning new technologies because I love create new things. I always want to know new ways to simplify what i do."
+        "description":"Hi! I am Lautaro Nasello, I am 23 years old and I live in Córdoba, Argentina. I love developing web applications! I also study Psychology at UNC. Applying the notions of this discipline helps me to create more intuitive and innovative products. I am interested in challenges and learning new things."
     },
     "navigate":{
-        "languaje":"Languaje"
+        "language":"EN",
+        "proyects": "Proyects",
+        "about": "About me",
+        "skills":"Skills",
+        "contact":"Contact"
     }
 
 }

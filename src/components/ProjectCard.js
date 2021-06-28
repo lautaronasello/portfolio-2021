@@ -8,12 +8,11 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 
-export default function ProjectCard({ src, title, description, alt }) {
+export default function ProjectCard({ src, title, description, alt, url }) {
   const colorScheme = useColorModeValue('blackAlpha', 'blue');
   return (
     <VStack
       maxW='sm'
-      spacing='3'
       borderWidth='1px'
       p={3}
       borderRadius='none'
@@ -26,9 +25,18 @@ export default function ProjectCard({ src, title, description, alt }) {
         <Box fontWeight='semibold' fontSize='16px'>
           {title}
         </Box>
-        <Box fontSize='12px'>{description}</Box>
+        <Box as='p' minH='54px' wordBreak='break-word' fontSize='12px'>
+          {description}
+        </Box>
         <Box>
-          <Button colorScheme={colorScheme} rounded='none' fontWeight='light'>
+          <Button
+            as='a'
+            target='_blank'
+            href={url}
+            colorScheme={colorScheme}
+            rounded='none'
+            fontWeight='light'
+          >
             {title}
           </Button>
         </Box>

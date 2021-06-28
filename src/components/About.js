@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <SimpleGrid align='center' columns={[1, null, 2]} spacing={1}>
-      <Box mt='25%'>
+      <Box mt={[null, '25%']} mb={['5rem', null]}>
         <Text fontSize='48px' fontWeight='bold'>
           {t('about.title')}
         </Text>

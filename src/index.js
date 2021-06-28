@@ -7,6 +7,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import global_es from './translations/es/global.json';
 import global_en from './translations/en/global.json';
+import firebase from 'firebase/app';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -20,6 +21,19 @@ i18next.init({
     },
   },
 });
+
+var firebaseConfig = {
+  apiKey: 'AIzaSyCQdhyDv7t3ih7_yUnN2trwM1DNRZfznfE',
+  authDomain: 'lautaronasello-portfolio.firebaseapp.com',
+  databaseURL: 'https://lautaronasello-portfolio-default-rtdb.firebaseio.com',
+  projectId: 'lautaronasello-portfolio',
+  storageBucket: 'lautaronasello-portfolio.appspot.com',
+  messagingSenderId: '672315797814',
+  appId: '1:672315797814:web:f797f1350a030ccf4b0397',
+  measurementId: 'G-YCTWTYJNND',
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
