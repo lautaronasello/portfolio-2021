@@ -1,16 +1,16 @@
-import { Container, Box, Link, Text, VStack } from '@chakra-ui/react';
+import { Container, Link, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import SocialBtn from './SocialBtn';
 import { useTranslation } from 'react-i18next';
 export default function Social() {
   const [t] = useTranslation('global');
   return (
-    <Container maxW='container.sm' id='contact'>
+    <Container maxW='container.md' id='contact'>
       <VStack spacing={8}>
-        <Text fontSize='48px' fontWeight='bold'>
+        <Text fontSize='3rem' fontWeight='bold'>
           {t('social.title')}
         </Text>
-        <Text fontSize='24px' fontWeight='semibold'>
+        <Text fontSize='1.5rem' fontWeight='semibold'>
           {t('social.description')}
         </Text>
         <Link

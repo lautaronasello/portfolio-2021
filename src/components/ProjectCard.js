@@ -22,10 +22,16 @@ export default function ProjectCard({ src, title, description, alt, url }) {
     >
       <Image src={src} w='10rem' h='10rem' alt={alt} />
       <Stack spacing={2} align='center'>
-        <Box fontWeight='semibold' fontSize='16px'>
+        <Box fontWeight='semibold' fontSize='20px'>
           {title}
         </Box>
-        <Box as='p' minH='54px' wordBreak='break-word' fontSize='12px'>
+        <Box
+          as='p'
+          lineHeight='16px'
+          minH='54px'
+          wordBreak='break-word'
+          fontSize='14px'
+        >
           {description}
         </Box>
         <Box>

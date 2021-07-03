@@ -69,7 +69,9 @@ export default function Navigate() {
                 offset={-70}
                 duration={1000}
               >
-                <Text cursor='pointer'>{t('navigate.proyects')} </Text>
+                <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
+                  {t('navigate.proyects')}{' '}
+                </Text>
               </Link>
               <Link
                 activeClass='active'
@@ -79,7 +81,9 @@ export default function Navigate() {
                 offset={-70}
                 duration={1000}
               >
-                <Text cursor='pointer'>{t('navigate.about')} </Text>
+                <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
+                  {t('navigate.about')}{' '}
+                </Text>
               </Link>
               <Link
                 activeClass='active'
@@ -89,7 +93,9 @@ export default function Navigate() {
                 offset={-70}
                 duration={1000}
               >
-                <Text cursor='pointer'>{t('navigate.skills')} </Text>
+                <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
+                  {t('navigate.skills')}{' '}
+                </Text>
               </Link>
               <Link
                 activeClass='active'
@@ -99,7 +105,9 @@ export default function Navigate() {
                 offset={-70}
                 duration={1000}
               >
-                <Text cursor='pointer'>{t('navigate.contact')} </Text>
+                <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
+                  {t('navigate.contact')}{' '}
+                </Text>
               </Link>
             </HStack>
             <Menu>

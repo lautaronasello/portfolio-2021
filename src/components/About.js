@@ -1,21 +1,28 @@
 import { SimpleGrid, Box, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import foto from '../img/about.jpeg';
+
 export default function About() {
   const [t] = useTranslation('global');
 
   return (
-    <SimpleGrid align='center' columns={[1, null, 2]} spacing={1}>
+    <SimpleGrid align='center' columns={[1, null, 2]} spacing={1} id='about'>
       <Box mt={[null, '25%']} mb={['5rem', null]}>
         <Text fontSize='48px' fontWeight='bold'>
           {t('about.title')}
         </Text>
-        <Text fontSize='16px'>{t('about.description')}</Text>
+        <Text lineHeight='22px' fontSize='24px' fontWeight='light'>
+          {t('about.description')}
+        </Text>
       </Box>
       <Box>
         <Image
-          shadow='xl'
-          src='https://images.unsplash.com/photo-1519713958759-6254243c4a53?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'
+          mb='10px'
+          objectFit='cover'
+          maxH='30rem'
+          src={foto}
+          boxShadow='2xl'
           alt='Lautaro Nasello'
         />
       </Box>

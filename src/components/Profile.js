@@ -30,7 +30,7 @@ export default function Profile() {
       src: pikachu,
       title: 'PokeApp',
       description: `${t('profile.pokeapp')}`,
-      url: 'https://pokeapp-cba.web.app/',
+      url: 'https://pokeapptest.web.app/',
     },
     {
       id: 4,

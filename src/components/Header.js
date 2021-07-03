@@ -1,17 +1,10 @@
-import {
-  Button,
-  Heading,
-  Stack,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Box, Button, Heading, Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import useWindowDimensions from './useWindowDimensions';
 
 export default function Header() {
-  // const colorScheme = useColorModeValue('linkedin', 'blue');
   const [t] = useTranslation('global');
   const { width } = useWindowDimensions();
   const [newFs, setNewFs] = useState('');
@@ -27,14 +20,14 @@ export default function Header() {
   }, [width]);
 
   return (
-    <Stack spacing={5} align='center' id='inicio'>
+    <Box align='center' id='inicio' mt={['50px', null]}>
       <Text fontSize='1.25rem' fontWeight='semibold'>
         {t('header.name')}
       </Text>
       <Heading fontSize={newFs} fontFamily='montserrat' fontWeight='bold'>
         {t('header.title')}
       </Heading>
-      <Text fontSize='16px'>{t('header.description')}</Text>
+      <Text fontSize='1.5rem'>{t('header.description')}</Text>
       <Button
         bg='#0a66c2'
         size='lg'
@@ -51,6 +44,6 @@ export default function Header() {
       >
         {t('header.btn')}
       </Button>
-    </Stack>
+    </Box>
   );
 }

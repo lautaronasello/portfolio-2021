@@ -12,7 +12,7 @@
     },
     "profile":{
         "title":"Proyectos",
-        "menos-caos":"Landind page con React js, Strapi, Node js, Firebase y Heroku. (Espera que heroku despierte)",
+        "menos-caos":"E-commerce con React js, Strapi, Node js, Firebase y Heroku. (Espera que heroku despierte)",
         "snake-game":"El tradicional y simple juego de la viborita. Desarrollado con HTML5, CSS y JavaScript.",
         "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavaScript-React consumiendo la API de Pokeappi.",
         "github":"También tengo otros proyectos en desarrollo que podés mirar en Github"

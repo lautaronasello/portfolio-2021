@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { IconButton } from '@chakra-ui/react';
+import { SimpleGrid, IconButton } from '@chakra-ui/react';
 
 export default function SocialBtn() {
   return (
-    <div>
+    <SimpleGrid columns={4} gap={[1, null, 2]}>
       <IconButton
         as='a'
         mx='5px'
@@ -45,6 +45,6 @@ export default function SocialBtn() {
         href='https://github.com/lautaronasello'
         shadow='xl'
       />
-    </div>
+    </SimpleGrid>
   );
 }

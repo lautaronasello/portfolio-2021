@@ -13,7 +13,7 @@
     },
     "profile":{
         "title":"Projects",
-        "menos-caos":"Landind page whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
+        "menos-caos":"E-commerce whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
         "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
         "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
         "github":"Also have other projects in development that can be seen on github!"
