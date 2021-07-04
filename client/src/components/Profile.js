@@ -42,7 +42,7 @@ export default function Profile() {
   ];
 
   return (
-    <Stack spacing={10}>
+    <Stack mt={['3rem', null, 0]} spacing={10}>
       <Text fontSize='48px' id='profile' fontWeight='bold'>
         {t('profile.title')}
       </Text>

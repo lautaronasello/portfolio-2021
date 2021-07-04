@@ -71,6 +71,7 @@ export default function Header() {
         {t('header.name')}
       </Text>
       <Heading
+        py={['0.5rem', '2rem']}
         lineHeight='3rem'
         fontSize={newFs}
         fontFamily='montserrat'
@@ -96,7 +97,13 @@ export default function Header() {
       >
         {t('header.btn')}
       </Button>
-      <Modal onClose={onClose} size='sm' isOpen={isOpen} isCentered>
+      <Modal
+        cancelable={false}
+        onClose={onClose}
+        size='sm'
+        isOpen={isOpen}
+        isCentered
+      >
         <ModalOverlay />
         <ModalContent borderRadius='none'>
           <form onSubmit={sendEmail}>
