@@ -3,7 +3,17 @@
         "name":"Hi I'm Lautaro!",
         "title":"Frontend Developer Web Trainee",
         "description":"This is my web portfolio. Here you will find more information about me and my projects.",
-        "btn": "LAUTARO NASELLO"
+        "btn": "LAUTARO NASELLO",
+        "contact_mail":"Contact",
+        "first_name":"First Name",
+        "email_address":"Email address",
+        "email_here":"Your email here",
+        "share_email": "I Never share your email",
+        "message":"Message",
+        "work_together":"Let's work together",
+        "send":"Send",
+        "close":"Close",
+        "alert":"Message sent succesfully"
     },
     "social":{
         "title":"Contact",

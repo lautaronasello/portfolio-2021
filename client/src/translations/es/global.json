@@ -2,8 +2,18 @@
     "header":{
         "name":"Hola, soy Lautaro!",
         "title":"Desarrollador Frontend Web Trainee",
-        "description":"Este es mi portfolio web. Aqui podrás encontrar mas informacion sobre mi y mis proyectos.",
-        "btn": "LAUTARO NASELLO"
+        "description":"Este es mi portfolio web. Aquí podrás encontrar mas información sobre mi y mis proyectos.",
+        "btn": "LAUTARO NASELLO",
+        "contact_mail":"Contacto",
+        "first_name":"Nombre",
+        "email_address":"Tu email",
+        "email_here":"Tu email aquí",
+        "share_email": "Nunca voy a compartir tu email",
+        "message":"Mensaje",
+        "work_together":"Trabajemos juntos",
+        "send":"Enviar",
+        "close":"Cerrar",
+        "alert":"Mensaje enviado con éxito!"
     },
     "social":{
         "title":"Contacto",

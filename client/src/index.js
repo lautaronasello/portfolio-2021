@@ -9,9 +9,11 @@ import global_es from './translations/es/global.json';
 import global_en from './translations/en/global.json';
 import firebase from 'firebase/app';
 
+var idioma = navigator.language;
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'es',
+  lng: idioma,
   resources: {
     es: {
       global: global_es,
@@ -40,7 +42,7 @@ ReactDOM.render(
     <I18nextProvider i18n={i18next}>
       <ChakraProvider>
         <ColorModeScript initialColorMode='dark'></ColorModeScript>
-        <App />
+        <App idioma={idioma} />
       </ChakraProvider>
     </I18nextProvider>
   </React.StrictMode>,

@@ -8,11 +8,11 @@ import { Center, Container } from '@chakra-ui/react';
 import About from './components/About';
 import Skills from './components/Skills';
 
-function App() {
+function App({ idioma }) {
   return (
     <>
       <VStack p={5} fontFamily='montserrat'>
-        <Navigate />
+        <Navigate idioma={idioma} />
         <Container maxW='container.xl' align='center'>
           <Center h='80vh'>
             <Header />

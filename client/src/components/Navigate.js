@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Flex, Heading } from '@chakra-ui/layout';
 import { FaChevronDown, FaMoon, FaSun } from 'react-icons/fa';
 import useWindowDimensions from './useWindowDimensions.js';
@@ -17,12 +17,21 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
-export default function Navigate() {
+
+export default function Navigate({ idioma }) {
   const { colorMode, toggleColorMode } = useColorMode();
   const isLight = colorMode === 'light';
   const bg = useColorModeValue('#fafafa', 'gray.700');
   const [t, i18n] = useTranslation('global');
   const { width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (idioma === 'es') {
+      i18n.changeLanguage('es');
+    } else {
+      i18n.changeLanguage('en');
+    }
+  }, [idioma, i18n]);
 
   return (
     <>
@@ -203,7 +212,7 @@ export default function Navigate() {
                 </MenuItem>
               ) : (
                 <MenuItem onClick={() => i18n.changeLanguage('es')}>
-                  Change to Spanish
+                  Switch to Spanish
                 </MenuItem>
               )}
             </MenuList>
