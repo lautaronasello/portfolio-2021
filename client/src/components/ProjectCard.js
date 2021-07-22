@@ -5,6 +5,7 @@ import {
   Button,
   useColorModeValue,
   VStack,
+  Center,
 } from '@chakra-ui/react';
 import React from 'react';
 
@@ -22,13 +23,13 @@ export default function ProjectCard({ src, title, description, alt, url }) {
     >
       <Image src={src} w='10rem' h='10rem' alt={alt} />
       <Stack spacing={2} align='center'>
-        <Box fontWeight='semibold' fontSize='20px'>
-          {title}
+        <Box minH={[null, '3.5rem']} fontWeight='semibold' fontSize='20px'>
+          <Center minH='3.5rem'>{title}</Center>
         </Box>
         <Box
           as='p'
           lineHeight='16px'
-          minH='54px'
+          minH='4rem'
           wordBreak='break-word'
           fontSize='14px'
         >

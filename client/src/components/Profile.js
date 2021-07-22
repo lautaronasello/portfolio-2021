@@ -5,6 +5,8 @@ import github from '../img/github.png';
 import menoscaos from '../img/menoscaos.png';
 import pikachu from '../img/Pikachu.png';
 import snake from '../img/snake-game.jpg';
+import notes from '../img/wallet.svg';
+
 import { useTranslation } from 'react-i18next';
 
 export default function Profile() {
@@ -34,6 +36,13 @@ export default function Profile() {
     },
     {
       id: 4,
+      src: notes,
+      title: 'NotesApp',
+      description: `${t('profile.notes')}`,
+      url: 'https://notes-lautaronasello.web.app/',
+    },
+    {
+      id: 5,
       src: github,
       title: 'GitHub',
       description: `${t('profile.github')}`,
@@ -46,7 +55,7 @@ export default function Profile() {
       <Text fontSize='48px' id='profile' fontWeight='bold'>
         {t('profile.title')}
       </Text>
-      <SimpleGrid columns={[1, null, 2, null, 4]} gap={[8, null, 6, null, 3]}>
+      <SimpleGrid columns={[1, null, 2, null, 5]} gap={[8, null, 6, null, 3]}>
         {projects.map((data) => (
           <ProjectCard
             key={data.id}
