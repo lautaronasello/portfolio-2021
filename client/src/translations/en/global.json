@@ -27,7 +27,8 @@
         "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
         "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
         "notes":"Notes web application created with React, Chakra UI and different firebase services.",
-        "github":"Also have other projects in development that can be seen on github!"
+        "github":"Also have other projects in development that can be seen on github!",
+        "spotytime":"Music application built with the Spotify api, React, Node Js, Bootstrap and Firebase hosting. "
     },
     "skills":{
         "title":"Skills",

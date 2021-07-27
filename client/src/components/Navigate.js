@@ -43,9 +43,10 @@ export default function Navigate({ idioma }) {
         pos='fixed'
         top='0rem'
         right='0'
-        zIndex='2'
+        zIndex='10002'
         align='center'
         shadow='lg'
+        maxH='4rem'
       >
         <Link
           activeClass='active'
@@ -227,6 +228,7 @@ export default function Navigate({ idioma }) {
           onClick={toggleColorMode}
         />
       </Flex>
+      <Flex w='100%' h='4rem'></Flex>
     </>
   );
 }

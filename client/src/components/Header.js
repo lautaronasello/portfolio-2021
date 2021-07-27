@@ -66,7 +66,7 @@ export default function Header() {
   }
 
   return (
-    <Box align='center' id='inicio' mt={['50px', null]}>
+    <Box align='center' id='inicio'>
       <Text fontSize='1.25rem' fontWeight='semibold'>
         {t('header.name')}
       </Text>
@@ -84,15 +84,16 @@ export default function Header() {
       </Text>
       <Button
         bg='#0a66c2'
-        size='lg'
+        h='4.5rem'
+        w='10rem'
         color='whitesmoke'
-        _hover={{ bg: '#004182' }}
+        _hover={{ bg: '#004182', shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
         mt={5}
         target='_blank'
         leftIcon={<FaMailBulk />}
         borderRadius='0'
         fontWeight='light'
-        shadow='dark-lg'
+        shadow='xl'
         onClick={onOpen}
       >
         {t('header.btn')}
