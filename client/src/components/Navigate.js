@@ -43,7 +43,7 @@ export default function Navigate({ idioma }) {
         pos='fixed'
         top='0rem'
         right='0'
-        zIndex='2'
+        zIndex='10002'
         align='center'
         shadow='lg'
       >

@@ -14,6 +14,7 @@ export default function SocialBtn() {
         target='_blank'
         href='https://www.instagram.com/launasello/'
         shadow='xl'
+        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       />
       <IconButton
         as='a'
@@ -24,6 +25,7 @@ export default function SocialBtn() {
         target='_blank'
         href='https://www.linkedin.com/in/lautaronasello/'
         shadow='xl'
+        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       />
       <IconButton
         as='a'
@@ -34,6 +36,7 @@ export default function SocialBtn() {
         target='_blank'
         href='https://twitter.com/LauNasello'
         shadow='xl'
+        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       />
       <IconButton
         as='a'
@@ -44,6 +47,7 @@ export default function SocialBtn() {
         target='_blank'
         href='https://github.com/lautaronasello'
         shadow='xl'
+        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       />
     </SimpleGrid>
   );
