@@ -17,7 +17,7 @@ function App({ idioma }) {
           <Center h='80vh'>
             <Header />
           </Center>
-          <VStack spacing={[20, 40]}>
+          <VStack spacing={[20, '60px']}>
             <Profile />
             <About />
             <Skills />

@@ -26,7 +26,9 @@
         "snake-game":"El tradicional y simple juego de la viborita. Desarrollado con HTML5, CSS y JavaScript.",
         "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavaScript-React consumiendo la API de Pokeappi.",
         "notes":"Aplicación web Notes creada con React, Chakra UI y diferentes servicios de base de fuego.",
-        "github":"También tengo otros proyectos en desarrollo que podés mirar en Github"
+        "github":"También tengo otros proyectos en desarrollo que podés mirar en Github",
+        "spotytime":"Aplicación de música creada con React, Node Js, Bootstrap y Firebase hosting y consumiendo la API de Spotify"
+
     },
     "skills":{
         "title":"Habilidades",

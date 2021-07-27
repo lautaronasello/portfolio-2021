@@ -67,7 +67,7 @@ export default function Skills() {
   ];
 
   return (
-    <VStack position='relative' top='10rem' spacing={10} id='skills'>
+    <VStack spacing={10} id='skills'>
       <Box fontSize='48px' fontWeight='bold'>
         {t('skills.title')}
       </Box>

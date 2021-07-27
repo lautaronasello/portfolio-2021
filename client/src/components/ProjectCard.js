@@ -15,7 +15,7 @@ export default function ProjectCard({ src, title, description, alt, url }) {
       bg='whitesmoke'
       className='projectCard'
       cursor='pointer'
-      h={['20rem', '15.5rem']}
+      h={['20rem', '20rem ', '15.5rem']}
       _hover={{
         h: '20rem',
         shadow: '0 10px 10px 0 rgba(0,0,0,0.5)',
@@ -23,7 +23,7 @@ export default function ProjectCard({ src, title, description, alt, url }) {
       href={url}
       target='_blank'
     >
-      <Image src={src} w='10rem' h='10rem' alt={alt} />
+      <Image src={src} w='10rem' minH='10rem' alt={alt} />
       <Stack spacing={2} align='center'>
         <Box minH={[null, '3.5rem']} fontWeight='semibold' fontSize='20px'>
           <Center minH='3.5rem'>{title}</Center>

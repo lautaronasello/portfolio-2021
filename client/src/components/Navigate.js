@@ -46,6 +46,7 @@ export default function Navigate({ idioma }) {
         zIndex='10002'
         align='center'
         shadow='lg'
+        maxH='4rem'
       >
         <Link
           activeClass='active'
@@ -227,6 +228,7 @@ export default function Navigate({ idioma }) {
           onClick={toggleColorMode}
         />
       </Flex>
+      <Flex w='100%' h='4rem'></Flex>
     </>
   );
 }
