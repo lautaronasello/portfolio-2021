@@ -22,6 +22,7 @@ export default function ProjectCard({ src, title, description, alt, url }) {
       }}
       href={url}
       target='_blank'
+      color='blackAlpha.900'
     >
       <Image src={src} w='10rem' minH='10rem' alt={alt} />
       <Stack spacing={2} align='center'>

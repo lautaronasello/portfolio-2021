@@ -54,7 +54,7 @@ export default function Navigate({ idioma }) {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={1000}
+          duration={1200}
         >
           <Heading
             ml='8'
@@ -77,7 +77,7 @@ export default function Navigate({ idioma }) {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={1000}
+                duration={1200}
               >
                 <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
                   {t('navigate.proyects')}{' '}
@@ -89,7 +89,7 @@ export default function Navigate({ idioma }) {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={1000}
+                duration={1200}
               >
                 <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
                   {t('navigate.about')}{' '}
@@ -101,7 +101,7 @@ export default function Navigate({ idioma }) {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={1000}
+                duration={1200}
               >
                 <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
                   {t('navigate.skills')}{' '}
@@ -113,7 +113,7 @@ export default function Navigate({ idioma }) {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={1000}
+                duration={1200}
               >
                 <Text cursor='pointer' _hover={{ textDecoration: 'underline' }}>
                   {t('navigate.contact')}{' '}
@@ -157,56 +157,46 @@ export default function Navigate({ idioma }) {
               Menu
             </MenuButton>
             <MenuList>
-              <MenuItem>
-                <Link
-                  activeClass='active'
-                  to='profile'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                >
-                  <Text cursor='pointer'>{t('navigate.proyects')} </Text>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link
-                  activeClass='active'
-                  to='about'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                >
-                  <Text cursor='pointer'>{t('navigate.about')} </Text>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                {' '}
-                <Link
-                  activeClass='active'
-                  to='skills'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                >
-                  <Text cursor='pointer'>{t('navigate.skills')} </Text>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                {' '}
-                <Link
-                  activeClass='active'
-                  to='contact'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={1000}
-                >
-                  <Text cursor='pointer'>{t('navigate.contact')} </Text>
-                </Link>
-              </MenuItem>
+              <Link
+                activeClass='active'
+                to='profile'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1200}
+              >
+                <MenuItem>{t('navigate.proyects')} </MenuItem>
+              </Link>
+              <Link
+                activeClass='active'
+                to='about'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1200}
+              >
+                <MenuItem>{t('navigate.about')}</MenuItem>
+              </Link>{' '}
+              <Link
+                activeClass='active'
+                to='skills'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1200}
+              >
+                <MenuItem>{t('navigate.skills')} </MenuItem>
+              </Link>{' '}
+              <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1200}
+              >
+                <MenuItem>{t('navigate.contact')}</MenuItem>
+              </Link>
               {t('navigate.language') === 'ES' ? (
                 <MenuItem onClick={() => i18n.changeLanguage('en')}>
                   Cambiar a Inglés

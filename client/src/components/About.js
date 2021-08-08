@@ -7,18 +7,12 @@ export default function About() {
   const [t] = useTranslation('global');
 
   return (
-    <SimpleGrid
-      align='center'
-      columns={[1, null, 2]}
-      id='about'
-      // position={[null, 'relative']}
-      // top={[null, '15rem']}
-    >
-      <Box mt={[null, '25%']} mb={['5rem', null]}>
+    <SimpleGrid align='center' columns={[1, null, 2]} id='about'>
+      <Box mt={[null, '10%']} mb={['5rem', null]}>
         <Text fontSize='48px' fontWeight='bold'>
           {t('about.title')}
         </Text>
-        <Text lineHeight='1.5rem' fontSize='24px' fontWeight='light'>
+        <Text lineHeight='2rem' fontSize='24px' fontWeight='light'>
           {t('about.description')}
         </Text>
       </Box>
