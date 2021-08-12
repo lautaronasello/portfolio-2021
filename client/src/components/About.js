@@ -22,7 +22,7 @@ export default function About() {
           objectFit='cover'
           maxH='30rem'
           src={foto}
-          boxShadow='2xl'
+          boxShadow='xl'
           alt='Lautaro Nasello'
         />
       </Box>

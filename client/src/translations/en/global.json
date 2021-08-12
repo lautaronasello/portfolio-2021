@@ -24,6 +24,7 @@
     "profile":{
         "title":"Projects",
         "menos-caos":"E-commerce whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
+        "bookgrand":"Social media app for sharing books and reviews. I made this whit React js, Firebase and Chakra UI ",
         "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
         "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
         "notes":"Notes web application created with React, Chakra UI and different firebase services.",

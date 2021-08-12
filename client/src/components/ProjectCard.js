@@ -9,7 +9,7 @@ export default function ProjectCard({ src, title, description, alt, url }) {
       borderWidth='1px'
       p={3}
       borderRadius='none'
-      boxShadow='xl'
+      boxShadow='lg'
       overflow='hidden'
       align='center'
       bg='whitesmoke'

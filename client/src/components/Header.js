@@ -87,14 +87,14 @@ export default function Header() {
         h='4.5rem'
         w='10rem'
         color='whitesmoke'
-        _hover={{ bg: '#004182', shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
         mt={5}
         target='_blank'
         leftIcon={<FaMailBulk />}
         borderRadius='0'
         fontWeight='light'
-        shadow='xl'
+        shadow='md'
         onClick={onOpen}
+        _hover={{ bg: '#004182', shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       >
         {t('header.btn')}
       </Button>

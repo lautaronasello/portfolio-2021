@@ -1,13 +1,14 @@
-import { Text, Stack, SimpleGrid, Box } from '@chakra-ui/react';
+import { Text, Stack, SimpleGrid, Box, Center, Button } from '@chakra-ui/react';
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import github from '../img/github.png';
 import menoscaos from '../img/menoscaos.png';
 import pikachu from '../img/Pikachu.png';
 import snake from '../img/snake-game.jpg';
 import notes from '../img/wallet.svg';
 import spotytime from '../img/spoty.png';
+import bookgrand from '../img/libro.png';
 import { useTranslation } from 'react-i18next';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Profile() {
   const [t] = useTranslation('global');
@@ -31,19 +32,19 @@ export default function Profile() {
     },
     {
       id: 3,
+      src: bookgrand,
+      title: 'Bookgrand',
+      description: `${t('profile.bookgrand')}`,
+      url: 'https://bookgrand.web.app/',
+      zIndex: '10002',
+    },
+    {
+      id: 4,
       src: snake,
       title: 'Snake Game',
       description: `${t('profile.snake-game')}`,
       url: 'https://snake-arg.web.app/',
       zIndex: '10002',
-    },
-    {
-      id: 4,
-      src: pikachu,
-      title: 'PokeApp',
-      description: `${t('profile.pokeapp')}`,
-      url: 'https://pokeapptest.web.app/',
-      zIndex: '10001',
     },
     {
       id: 5,
@@ -55,10 +56,10 @@ export default function Profile() {
     },
     {
       id: 6,
-      src: github,
-      title: 'GitHub',
-      description: `${t('profile.github')}`,
-      url: 'https://github.com/lautaronasello/',
+      src: pikachu,
+      title: 'PokeApp',
+      description: `${t('profile.pokeapp')}`,
+      url: 'https://pokeapptest.web.app/',
       zIndex: '10001',
     },
   ];
@@ -85,6 +86,30 @@ export default function Profile() {
           </Box>
         ))}
       </SimpleGrid>
+      <Center>
+        <Button
+          size='lg'
+          shadow='md'
+          leftIcon={<FaGithub />}
+          as='a'
+          h='4rem'
+          rounded='none'
+          href='https://github.com/lautaronasello/'
+          target='_blank'
+          _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
+        >
+          GITHUB
+        </Button>
+      </Center>
     </Stack>
   );
 }
+
+// {
+//   id: 6,
+//   src: github,
+//   title: 'GitHub',
+//   description: `${t('profile.github')}`,
+//   url: 'https://github.com/lautaronasello/',
+//   zIndex: '10001',
+// },

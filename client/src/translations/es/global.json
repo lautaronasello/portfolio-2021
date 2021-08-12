@@ -23,6 +23,7 @@
     "profile":{
         "title":"Proyectos",
         "menos-caos":"E-commerce con React js, Strapi, Node js, Firebase y Heroku. (Espera que heroku despierte)",
+        "bookgrand":"Red Social para poder compartir libros y realizar una reseña. Hecho con React, Firebase y Chakra UI, entre otros.",
         "snake-game":"El tradicional y simple juego de la viborita. Desarrollado con HTML5, CSS y JavaScript.",
         "pokeapp":"Pokeapp con HTML, CSS, Bootstrap y JavaScript-React consumiendo la API de Pokeappi.",
         "notes":"Aplicación web Notes creada con React, Chakra UI y diferentes servicios de base de fuego.",
