@@ -9,10 +9,17 @@ import spotytime from '../img/spoty.png';
 import bookgrand from '../img/libro.png';
 import { useTranslation } from 'react-i18next';
 import { FaGithub } from 'react-icons/fa';
-
+import useElementOnScreen from '../hooks/useElementOnScreen';
 export default function Profile() {
   const [t] = useTranslation('global');
-
+  const [currentRef] = useElementOnScreen(
+    {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0,
+    },
+    'profile 0.5s forwards ease-out'
+  );
   let projects = [
     {
       id: 1,
@@ -44,7 +51,7 @@ export default function Profile() {
       title: 'Snake Game',
       description: `${t('profile.snake-game')}`,
       url: 'https://snake-arg.web.app/',
-      zIndex: '10002',
+      zIndex: '10001',
     },
     {
       id: 5,
@@ -72,6 +79,8 @@ export default function Profile() {
       <SimpleGrid
         columns={[1, null, 2, null, 3]}
         gap={[8, '5rem', 10, null, 3]}
+        ref={currentRef}
+        opacity='0'
       >
         {projects.map((data) => (
           <Box h={[null, '18rem']} key={data.id} zIndex={data.zIndex}>
@@ -104,12 +113,3 @@ export default function Profile() {
     </Stack>
   );
 }
-
-// {
-//   id: 6,
-//   src: github,
-//   title: 'GitHub',
-//   description: `${t('profile.github')}`,
-//   url: 'https://github.com/lautaronasello/',
-//   zIndex: '10001',
-// },

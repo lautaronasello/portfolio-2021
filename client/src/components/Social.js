@@ -4,6 +4,7 @@ import SocialBtn from './SocialBtn';
 import { useTranslation } from 'react-i18next';
 export default function Social() {
   const [t] = useTranslation('global');
+
   return (
     <Container maxW='container.md' id='contact'>
       <VStack spacing={8}>

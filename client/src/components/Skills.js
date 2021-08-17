@@ -12,9 +12,17 @@ import {
 } from 'react-icons/fa';
 import BoxSkills from './BoxSkills';
 import { useTranslation } from 'react-i18next';
+import useElementOnScreen from '../hooks/useElementOnScreen';
 export default function Skills() {
   const [t] = useTranslation('global');
-
+  const [containerRef] = useElementOnScreen(
+    {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0,
+    },
+    'skills 0.5s forwards ease-out'
+  );
   const skills = [
     {
       id: 1,
@@ -71,7 +79,13 @@ export default function Skills() {
       <Box fontSize='48px' fontWeight='bold'>
         {t('skills.title')}
       </Box>
-      <SimpleGrid alignContent='center' columns={[1, 2, 4]} gap={['15px']}>
+      <SimpleGrid
+        ref={containerRef}
+        alignContent='center'
+        columns={[1, 2, 4]}
+        gap={['15px']}
+        opacity='0'
+      >
         {skills.map((data) => (
           <BoxSkills
             key={data.id}

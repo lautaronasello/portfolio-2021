@@ -84,7 +84,7 @@ export default function Header() {
       </Text>
       <Button
         bg='#0a66c2'
-        h='4.5rem'
+        h='4rem'
         w='10rem'
         color='whitesmoke'
         mt={5}
@@ -93,6 +93,7 @@ export default function Header() {
         borderRadius='0'
         fontWeight='light'
         shadow='md'
+        rounded='md'
         onClick={onOpen}
         _hover={{ bg: '#004182', shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       >
