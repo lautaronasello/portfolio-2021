@@ -1,31 +1,41 @@
-import { SimpleGrid, Box, Text, Image } from '@chakra-ui/react';
+import { SimpleGrid, Box, Text, Center } from '@chakra-ui/react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import foto from '../img/about.jpeg';
+import useElementOnScreen from '../hooks/useElementOnScreen';
+import AboutImg from './AboutImg';
 
 export default function About() {
   const [t] = useTranslation('global');
 
+  const [containerRef] = useElementOnScreen(
+    {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0,
+    },
+    'anim1 0.5s forwards ease-out'
+  );
+
   return (
-    <SimpleGrid align='center' columns={[1, null, 2]} id='about'>
-      <Box mt={[null, '10%']} mb={['5rem', null]}>
-        <Text fontSize='48px' fontWeight='bold'>
-          {t('about.title')}
-        </Text>
-        <Text lineHeight='2rem' fontSize='24px' fontWeight='light'>
-          {t('about.description')}
-        </Text>
-      </Box>
-      <Box>
-        <Image
-          mb='10px'
-          objectFit='cover'
-          maxH='30rem'
-          src={foto}
-          boxShadow='xl'
-          alt='Lautaro Nasello'
-        />
-      </Box>
-    </SimpleGrid>
+    <Center>
+      <SimpleGrid align='center' columns={[1, null, 2]} id='about'>
+        <Box
+          ref={containerRef}
+          className='aboutBox'
+          id='aboutBox'
+          mt={[null, '10%']}
+          mb={['5rem', null]}
+          opacity='0'
+        >
+          <Text fontSize='48px' fontWeight='bold'>
+            {t('about.title')}
+          </Text>
+          <Text lineHeight='2rem' fontSize='24px' fontWeight='light'>
+            {t('about.description')}
+          </Text>
+        </Box>
+        <AboutImg />
+      </SimpleGrid>
+    </Center>
   );
 }

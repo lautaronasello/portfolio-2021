@@ -43,9 +43,9 @@ export default function Navigate({ idioma }) {
         pos='fixed'
         top='0rem'
         right='0'
+        shadow='md'
         zIndex='10002'
         align='center'
-        shadow='lg'
         maxH='4rem'
       >
         <Link
