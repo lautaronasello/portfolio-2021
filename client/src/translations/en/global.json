@@ -1,58 +1,55 @@
 {
-    "header":{
-        "name":"Hi I'm Lautaro!",
-        "title":"Frontend Developer",
-        "description":"This is my web portfolio. Here you will find more information about me and my projects.",
-        "btn": "CONTACT ME",
-        "contact_mail":"Contact",
-        "first_name":"First Name",
-        "email_address":"Email address",
-        "email_here":"Your email here",
-        "share_email": "I Never share your email",
-        "message":"Message",
-        "work_together":"Let's work together",
-        "send":"Send",
-        "close":"Close",
-        "alert":"Message sent succesfully"
-    },
-    "social":{
-        "title":"Contact",
-        "description":"Let’s work together! Send me a message or an email with your offer!",
-        "spec":"This portfolio was made with React js, Chakra UI and Firebase among other things."
-
-    },
-    "profile":{
-        "title":"Projects",
-        "menos-caos":"E-commerce whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
-        "bookgrand":"Social media app for sharing books and reviews. I made this whit React js, Firebase and Chakra UI ",
-        "snake-game":"Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
-        "pokeapp":"Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
-        "notes":"Notes web application created with React, Chakra UI and different firebase services.",
-        "github":"Also have other projects in development that can be seen on github!",
-        "spotytime":"Music application built with the Spotify api, React, Node Js, Bootstrap and Firebase hosting. "
-    },
-    "skills":{
-        "title":"Skills",
-        "html5":"The standar HTML5 markup languaje. I have Medium-high level to be able to build a large number of web pages.",
-        "css":"The graphic design language in cascading to define and create a web page.",
-        "javascript":"This language add the functionality to the web page. Requires logic and lateral think.",
-        "react":"The JavaScript Framework created by Facebook. Im constantly learnig from this framework. This is one of my favorites.",
-        "strapi":"Strapi is the next-gen headless CMS, open-source, javascript, enabling content-​rich experiences to be created, managed and exposed to any digital device.",
-        "bootstrap":"CSS framework for responsive web design. Also right now im learning Chakra UI for React",
-        "firebase":"Google application development platform that helps you build, improve, and grow your app",
-        "github":"Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects."
-    },
-    "about":{
-        "title":"About",
-        "description":"Hi there! I am Lautaro Nasello, I am 23 years old and I live in Córdoba, Argentina. I love developing web applications! I also study Psychology at UNC. Sometimes my curiosity leads me to learn too many things which can be good or bad. I am interested in taking risks to improve my day to day. Applying the notions of this discipline helps me to create more intuitive and innovative products. I am interested in challenges and learning new things."
-    },
-    "navigate":{
-        "language":"EN",
-        "proyects": "Proyects",
-        "about": "About me",
-        "skills":"Skills",
-        "contact":"Contact"
-    }
-
+  "header": {
+    "name": "Hi I'm Lautaro!",
+    "title": "Developer Web",
+    "description": "This is my web portfolio. Here you will find more information about me and my projects.",
+    "btn": "CONTACT ME",
+    "contact_mail": "Contact",
+    "first_name": "First Name",
+    "email_address": "Email address",
+    "email_here": "Your email here",
+    "share_email": "I Never share your email",
+    "message": "Message",
+    "work_together": "Let's work together",
+    "send": "Send",
+    "close": "Close",
+    "alert": "Message sent succesfully"
+  },
+  "social": {
+    "title": "Contact",
+    "description": "Let’s work together! Send me a message or an email with your offer!",
+    "spec": "This portfolio was made with React js, Chakra UI and Firebase among other things."
+  },
+  "profile": {
+    "title": "Projects",
+    "menos-caos": "E-commerce whit React js, Strapi, Node js, Firebase and Heroku. (Wait for heroku awake)",
+    "bookgrand": "Social media app for sharing books and reviews. I made this whit React js, Firebase and Chakra UI ",
+    "snake-game": "Simple game inspired in traditional snake. Write with HTML5, CSS and JavaScript.",
+    "pokeapp": "Pokeapp whit HTML, CSS, Bootstrap and JavasCript-React consuming the pokeapi api.",
+    "notes": "Notes web application created with React, Chakra UI and different firebase services.",
+    "github": "Also have other projects in development that can be seen on github!",
+    "spotytime": "Music application built with the Spotify api, React, Node Js, Bootstrap and Firebase hosting. "
+  },
+  "skills": {
+    "title": "Skills",
+    "html5": "The standar HTML5 markup languaje. I have Medium-high level to be able to build a large number of web pages.",
+    "css": "The graphic design language in cascading to define and create a web page.",
+    "javascript": "This language add the functionality to the web page. Requires logic and lateral think.",
+    "react": "The JavaScript Framework created by Facebook. Im constantly learnig from this framework. This is one of my favorites.",
+    "strapi": "Strapi is the next-gen headless CMS, open-source, javascript, enabling content-​rich experiences to be created, managed and exposed to any digital device.",
+    "bootstrap": "CSS framework for responsive web design. Also right now im learning Chakra UI for React",
+    "firebase": "Google application development platform that helps you build, improve, and grow your app",
+    "github": "Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects."
+  },
+  "about": {
+    "title": "About",
+    "description": "Hi there! I am Lautaro Nasello, I am 23 years old and I live in Córdoba, Argentina. I love developing web applications! I also study Psychology at UNC. Sometimes my curiosity leads me to learn too many things which can be good or bad. I am interested in taking risks to improve my day to day. Applying the notions of this discipline helps me to create more intuitive and innovative products. I am interested in challenges and learning new things."
+  },
+  "navigate": {
+    "language": "EN",
+    "proyects": "Proyects",
+    "about": "About me",
+    "skills": "Skills",
+    "contact": "Contact"
+  }
 }
-

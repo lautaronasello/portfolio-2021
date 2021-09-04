@@ -1,4 +1,4 @@
-import { Container, Link, Text, VStack } from '@chakra-ui/react';
+import { Container, Link, Text, VStack, Center } from '@chakra-ui/react';
 import React from 'react';
 import SocialBtn from './SocialBtn';
 import { useTranslation } from 'react-i18next';

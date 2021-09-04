@@ -1,8 +1,8 @@
 {
     "header":{
         "name":"Hola, soy Lautaro!",
-        "title":"Desarrollador Frontend",
-        "description":"Este es mi portfolio web. Aquí podrás encontrar mas información sobre mi y mis proyectos.",
+        "title":"Desarrollador web",
+        "description":"Este es mi portfolio web. Aquí podrás encontrar más información sobre mí y mis proyectos.",
         "btn": "CONTACTO",
         "contact_mail":"Contacto",
         "first_name":"Nombre",
@@ -17,7 +17,7 @@
     },
     "social":{
         "title":"Contacto",
-        "description":"Queres que trabajemos juntos? Mándame un mail o un mensaje con tu propuesta!",
+        "description":"¿Querés que trabajemos juntos? Enviame un mail o un mensaje con tu propuesta!",
         "spec":"Este portfolio fue realizado con React js, Chakra UI y Firebase entre otros."
     },
     "profile":{
@@ -44,7 +44,7 @@
     },
     "about":{
         "title":"Sobre mi",
-        "description":"Hola! Soy Lautaro Nasello, tengo 23 años y vivo en Córdoba, Argentina. Amo desarrollar aplicaciones web! Además estudio Psicología en la UNC. A veces mi curiosidad me llevar a aprender demasiadas cosas lo cual puede estar bueno o malo. Estoy interesado en arriesgarme para mejorar mi dia a dia. Aplicar las nociones de esta disciplina me ayuda para crear productos más intuitivos e innovadores. Me interesan los desafíos y aprender cosas nuevas."
+        "description":"¡Hola! Soy Lautaro Nasello, tengo 23 años y vivo en Córdoba, Argentina. Amo desarrollar aplicaciones web. Además estudio Psicología en la UNC. A veces mi curiosidad me llevar a aprender demasiadas cosas lo cual puede estar bueno o malo. Estoy interesado en arriesgarme para mejorar mi día a día. Aplicar las nociones de esta disciplina me ayuda para crear productos más intuitivos e innovadores. Me interesan los desafíos y aprender cosas nuevas."
     },
     "navigate":{
         "language":"ES",

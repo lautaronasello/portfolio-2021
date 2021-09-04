@@ -18,13 +18,18 @@ export default function About() {
 
   return (
     <Center>
-      <SimpleGrid align='center' columns={[1, null, 2]} id='about'>
+      <SimpleGrid
+        align='center'
+        columns={[1, null, 2]}
+        gap={['2rem', null]}
+        id='about'
+      >
         <Box
           ref={containerRef}
           className='aboutBox'
           id='aboutBox'
           mt={[null, '10%']}
-          mb={['5rem', null]}
+          mb={[null]}
           opacity='0'
         >
           <Text fontSize='48px' fontWeight='bold'>

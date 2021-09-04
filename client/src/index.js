@@ -9,8 +9,8 @@ import global_es from './translations/es/global.json';
 import global_en from './translations/en/global.json';
 import firebase from 'firebase/app';
 
-var idioma = navigator.language;
-
+var idioma = window.navigator.language || window.navigator.userLanguage;
+console.log(idioma);
 i18next.init({
   interpolation: { escapeValue: false },
   lng: idioma,
