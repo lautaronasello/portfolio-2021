@@ -37,7 +37,6 @@ export default function Profile() {
       title: 'Menos Caos',
       description: `${t('profile.menos-caos')}`,
       url: 'https://menoscaostest.web.app/',
-      zIndex: '10002',
     },
     {
       id: 2,
@@ -45,7 +44,6 @@ export default function Profile() {
       title: 'Spotytime',
       description: `${t('profile.spotytime')}`,
       url: 'https://spotytune.web.app/',
-      zIndex: '10002',
     },
     {
       id: 3,
@@ -53,7 +51,6 @@ export default function Profile() {
       title: 'Bookgrand',
       description: `${t('profile.bookgrand')}`,
       url: 'https://bookgrand.web.app/',
-      zIndex: '10002',
     },
     {
       id: 4,
@@ -61,7 +58,6 @@ export default function Profile() {
       title: 'Snake Game',
       description: `${t('profile.snake-game')}`,
       url: 'https://snake-arg.web.app/',
-      zIndex: '10001',
     },
     {
       id: 5,
@@ -69,7 +65,6 @@ export default function Profile() {
       title: 'NotesApp',
       description: `${t('profile.notes')}`,
       url: 'https://notes-lautaronasello.web.app/',
-      zIndex: '10001',
     },
     {
       id: 6,
@@ -77,12 +72,11 @@ export default function Profile() {
       title: 'PokeApp',
       description: `${t('profile.pokeapp')}`,
       url: 'https://pokeapptest.web.app/',
-      zIndex: '10001',
     },
   ];
 
   return (
-    <Stack zIndex='10001' mt={['3rem', '3rem', '3rem']} spacing={'5rem'}>
+    <Stack mt={['3rem', '3rem', '3rem']} spacing={'5rem'}>
       <Text fontSize='48px' id='profile' fontWeight='bold'>
         {t('profile.title')}
       </Text>
