@@ -41,8 +41,6 @@ export default function Header() {
     }
   }, [width]);
 
-  console.log(colorMode);
-
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   function sendEmail(e) {
@@ -69,6 +67,25 @@ export default function Header() {
     e.target.reset();
   }
 
+  const [bgColorBtn, setBgColorBtn] = useState(null);
+
+  useEffect(() => {
+    var btnDark = {
+      bg: '#2d3748',
+      hover: '#1a202c',
+    };
+
+    var btnLight = {
+      bg: '#1b212d80',
+      hover: '#1b212d',
+    };
+
+    colorMode === 'dark' && setBgColorBtn(btnDark);
+    colorMode === 'light' && setBgColorBtn(btnLight);
+  }, [colorMode]);
+
+  // console.log(bgColorBtn.hover);
+
   return (
     <Box align='center' id='inicio'>
       <Text fontSize='2rem' fontWeight='semibold'>
@@ -87,7 +104,7 @@ export default function Header() {
         {t('header.description')}
       </Text>
       <Button
-        bg={colorMode === 'light' ? '#1b212d' : '#2d3748'}
+        bg={bgColorBtn && bgColorBtn.bg}
         h='4rem'
         w='10rem'
         color='whitesmoke'
@@ -98,7 +115,10 @@ export default function Header() {
         shadow='md'
         rounded='sm'
         onClick={onOpen}
-        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
+        _hover={{
+          shadow: '0 10px 10px 0 rgba(0,0,0,0.5)',
+          bg: bgColorBtn && bgColorBtn.hover,
+        }}
       >
         {t('header.btn')}
       </Button>

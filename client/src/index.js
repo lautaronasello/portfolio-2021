@@ -51,7 +51,7 @@ ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <ChakraProvider theme={theme}>
-        <ColorModeScript initialColorMode='dark'></ColorModeScript>
+        <ColorModeScript initialColorMode='light'></ColorModeScript>
         <App idioma={idioma} />
       </ChakraProvider>
     </I18nextProvider>
