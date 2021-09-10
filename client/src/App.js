@@ -17,12 +17,14 @@ function App({ idioma }) {
           <Center h='80vh'>
             <Header />
           </Center>
-          <VStack spacing={[20, '60px']}>
-            <Profile />
-            <About />
-            <Skills />
-            <Social />
-          </VStack>
+          <Container maxW={{ base: 'container.lg', xl: 'container.xl' }}>
+            <VStack spacing={['4rem', '10rem']}>
+              <Profile />
+              <About />
+              <Skills />
+              <Social />
+            </VStack>
+          </Container>
         </Container>
       </VStack>
     </>

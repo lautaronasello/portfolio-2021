@@ -8,7 +8,6 @@ import {
   FaReact,
   FaBootstrap,
   FaDatabase,
-  FaGoogle,
 } from 'react-icons/fa';
 import BoxSkills from './BoxSkills';
 import { useTranslation } from 'react-i18next';
@@ -23,6 +22,7 @@ export default function Skills() {
     },
     'skills 0.5s forwards ease-out'
   );
+
   const skills = [
     {
       id: 1,
@@ -62,7 +62,7 @@ export default function Skills() {
     },
     {
       id: 7,
-      icon: FaGoogle,
+      image: true,
       title: 'Firebase',
       text: `${t('skills.firebase')}`,
     },
@@ -82,7 +82,7 @@ export default function Skills() {
       <SimpleGrid
         ref={containerRef}
         alignContent='center'
-        columns={[1, 2, 4]}
+        columns={{ base: 1, md: 2, lg: 4 }}
         gap={['15px']}
         opacity='0'
       >
@@ -90,6 +90,7 @@ export default function Skills() {
           <BoxSkills
             key={data.id}
             icon={data.icon}
+            image={data.image}
             title={data.title}
             text={data.text}
           />

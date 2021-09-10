@@ -17,6 +17,7 @@ import {
   FormHelperText,
   VStack,
   Textarea,
+  useColorMode,
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
@@ -29,6 +30,7 @@ export default function Header() {
   const { width } = useWindowDimensions();
   const [newFs, setNewFs] = useState('');
   const [successMessage, setSuccessMessage] = useState(false);
+  const { colorMode } = useColorMode();
   useEffect(() => {
     if (width <= 320) {
       setNewFs('2rem');
@@ -38,6 +40,8 @@ export default function Header() {
       setNewFs('3rem');
     }
   }, [width]);
+
+  console.log(colorMode);
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -67,7 +71,7 @@ export default function Header() {
 
   return (
     <Box align='center' id='inicio'>
-      <Text fontSize='1.25rem' fontWeight='semibold'>
+      <Text fontSize='2rem' fontWeight='semibold'>
         {t('header.name')}
       </Text>
       <Heading
@@ -83,7 +87,7 @@ export default function Header() {
         {t('header.description')}
       </Text>
       <Button
-        bg='#0a66c2'
+        bg={colorMode === 'light' ? '#1b212d' : '#2d3748'}
         h='4rem'
         w='10rem'
         color='whitesmoke'
@@ -91,11 +95,10 @@ export default function Header() {
         target='_blank'
         leftIcon={<FaMailBulk />}
         borderRadius='0'
-        fontWeight='light'
         shadow='md'
-        rounded='md'
+        rounded='sm'
         onClick={onOpen}
-        _hover={{ bg: '#004182', shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
+        _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
       >
         {t('header.btn')}
       </Button>
