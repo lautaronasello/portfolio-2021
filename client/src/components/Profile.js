@@ -7,7 +7,7 @@ import {
   Button,
   useColorMode,
 } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import menoscaos from '../img/menoscaos.png';
 import pokemon from '../img/pokemon-logo.svg';
 import snake from '../img/snake-game.svg';
@@ -75,6 +75,25 @@ export default function Profile() {
     },
   ];
 
+  const [bgColorBtn, setBgColorBtn] = useState({
+    bg: '#1b212d80',
+    hover: '#1b212d',
+  });
+
+  useEffect(() => {
+    var btnDark = {
+      bg: '#2d3748',
+      hover: '#1a202c',
+    };
+    var btnLight = {
+      bg: '#1b212d80',
+      hover: '#1b212d',
+    };
+
+    colorMode === 'dark' && setBgColorBtn(btnDark);
+    colorMode === 'light' && setBgColorBtn(btnLight);
+  }, [colorMode]);
+
   return (
     <Stack mt={['3rem', '3rem', '3rem']} spacing={'5rem'}>
       <Text fontSize='48px' id='profile' fontWeight='bold'>
@@ -105,7 +124,7 @@ export default function Profile() {
       </SimpleGrid>
       <Center>
         <Button
-          bg={colorMode === 'light' ? '#1b212d' : '#2d3748'}
+          bg={bgColorBtn.bg}
           color='whitesmoke'
           size='lg'
           shadow='md'
@@ -115,7 +134,10 @@ export default function Profile() {
           rounded='sm'
           href='https://github.com/lautaronasello/'
           target='_blank'
-          _hover={{ shadow: '0 10px 10px 0 rgba(0,0,0,0.5)' }}
+          _hover={{
+            shadow: '0 10px 10px 0 rgba(0,0,0,0.5)',
+            bg: bgColorBtn.hover,
+          }}
         >
           GITHUB
         </Button>
