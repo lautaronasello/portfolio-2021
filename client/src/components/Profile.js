@@ -81,13 +81,17 @@ export default function Profile() {
         {t('profile.title')}
       </Text>
       <SimpleGrid
-        columns={[1, 2, 2, null, 3]}
-        gap={[8, '1rem', '1rem', '3rem', '3rem']}
+        columns={{ base: 1, md: 2, lg: 3 }}
+        gap={{ base: '1rem', md: '3rem' }}
         ref={currentRef}
         opacity='0'
       >
         {projects.map((data) => (
-          <Box h={[null, '15rem', '14rem']} key={data.id} zIndex={data.zIndex}>
+          <Box
+            h={{ base: null, md: '15rem', lg: '14rem' }}
+            key={data.id}
+            zIndex={data.zIndex}
+          >
             <BoxSkills
               key={data.id}
               imageProfile={data.src}

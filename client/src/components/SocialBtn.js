@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { SimpleGrid, IconButton, Center, HStack } from '@chakra-ui/react';
+import { IconButton, Center, HStack } from '@chakra-ui/react';
 
 export default function SocialBtn() {
   return (

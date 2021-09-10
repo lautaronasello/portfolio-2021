@@ -82,7 +82,7 @@ export default function Skills() {
       <SimpleGrid
         ref={containerRef}
         alignContent='center'
-        columns={[1, 2, 4]}
+        columns={{ base: 1, md: 2, lg: 4 }}
         gap={['15px']}
         opacity='0'
       >

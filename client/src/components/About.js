@@ -20,15 +20,15 @@ export default function About() {
     <Center>
       <SimpleGrid
         align='center'
-        columns={[1, null, 2]}
-        gap={['2rem', null]}
+        columns={{ base: 1, lg: 2 }}
+        gap={{ base: '2rem', md: null }}
         id='about'
       >
         <Box
           ref={containerRef}
           className='aboutBox'
           id='aboutBox'
-          mt={[null, '10%']}
+          mt={{ base: null, md: '10%' }}
           mb={[null]}
           opacity='0'
         >

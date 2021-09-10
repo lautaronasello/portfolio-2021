@@ -17,7 +17,7 @@ function App({ idioma }) {
           <Center h='80vh'>
             <Header />
           </Center>
-          <Container maxW='container.lg'>
+          <Container maxW={{ base: 'container.lg', xl: 'container.xl' }}>
             <VStack spacing={['4rem', '10rem']}>
               <Profile />
               <About />

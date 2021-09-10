@@ -15,7 +15,7 @@ export default function AboutImg() {
   return (
     <Box ref={containerRef} opacity='0'>
       <Image
-        ms={[0, 0, '20%', '20%']}
+        ms={{ lg: '20%' }}
         objectFit='cover'
         maxH='30rem'
         src={foto}
