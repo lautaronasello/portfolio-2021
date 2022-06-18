@@ -37,14 +37,16 @@
         "css":"El lenguaje de diseño gráfico en cascada para definir y crear una página web.",
         "javascript":"Este idioma agrega la funcionalidad a la página web. Requiere lógica y pensamiento lateral.",
         "react":"El framework de JavaScript creado por Facebook. Estoy aprendiendo constantemente de este mismo. Este es uno de mis favoritos.",
-        "strapi":"Strapi es el headless CMS de próxima generación, de código abierto, javascript, que permite crear, administrar y exponer experiencias ricas en contenido a cualquier dispositivo digital.",
-        "bootstrap":"El framework de CSS mas usado para diseño web responsive. También en este momento estoy aprendiendo Chakra UI para React",
+        "strapi":"Strapi es el headless CMS de próxima generación, de código abierto, javascript, que permite crear, administrar y exponer experiencias a cualquier dispositivo digital.",
+        "bootstrap":"El framework de CSS mas usado para diseño web responsive. También en este momento estoy aprendiendo Chakra UI y MUI para React",
         "firebase":"Plataforma de desarrollo de aplicaciones de Google que ayuda a crear, mejorar y hacer crecer la aplicación",
-        "github":"GitHub es una plataforma web que se utiliza para el control de versiones. Git simplifica el proceso de trabajar con otras personas y facilita la colaboración en proyectos."
+        "github":"GitHub es una plataforma web que se utiliza para el control de versiones. Git simplifica el proceso de trabajar con otras personas y facilita la colaboración en proyectos.",
+        "node":"Esta plataforma aprovecha todos tus conocimientos en JavaScript y te permite programar la parte back-end de las aplicaciones utilizando ese mismo lenguaje.",
+        "sql":"El lenguaje SQL es utilizado para poder crear y administrar bases de datos. Actualmente mi nivel es basico como para entender consultas simples aunque en mis proyectos laborales esta presente."
     },
     "about":{
         "title":"Sobre mi",
-        "description":"¡Hola! Soy Lautaro Nasello, tengo 23 años y vivo en Córdoba, Argentina. Amo desarrollar aplicaciones web. Además estudio Psicología en la UNC. A veces mi curiosidad me llevar a aprender demasiadas cosas lo cual puede estar bueno o malo. Estoy interesado en arriesgarme para mejorar mi día a día. Aplicar las nociones de esta disciplina me ayuda para crear productos más intuitivos e innovadores. Me interesan los desafíos y aprender cosas nuevas."
+        "description":"¡Hola! Soy Lautaro Nasello, tengo 23 años y vivo en Córdoba, Argentina. Amo desarrollar aplicaciones web. Además estudio Psicología en la UNC. Soy una persona curiosa por la programacion y eso me llama a seguir aprendiendo cada vez mas. Estoy interesado en arriesgarme para mejorar mi día a día. Aplicar las nociones de esta disciplina me ayuda para crear productos más intuitivos e innovadores. Me interesan los desafíos y aprender cosas nuevas."
     },
     "navigate":{
         "language":"ES",

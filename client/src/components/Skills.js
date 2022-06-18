@@ -8,6 +8,8 @@ import {
   FaReact,
   FaBootstrap,
   FaDatabase,
+  FaNode,
+  FaNodeJs,
 } from 'react-icons/fa';
 import BoxSkills from './BoxSkills';
 import { useTranslation } from 'react-i18next';
@@ -24,6 +26,12 @@ export default function Skills() {
   );
 
   const skills = [
+    {
+      id: 4,
+      icon: FaReact,
+      title: 'React Js.',
+      text: `${t('skills.react')}`,
+    },
     {
       id: 1,
       icon: FaHtml5,
@@ -43,17 +51,25 @@ export default function Skills() {
       text: `${t('skills.javascript')}`,
     },
     {
-      id: 4,
-      icon: FaReact,
-      title: 'React Js.',
-      text: `${t('skills.react')}`,
-    },
-    {
       id: 5,
       icon: FaDatabase,
       title: 'Strapi',
       text: `${t('skills.strapi')}`,
     },
+    {
+      id: 10,
+      icon: FaDatabase,
+      title: 'SQL',
+      text: `${t('skills.sql')}`,
+    },
+
+    {
+      id: 7,
+      image: true,
+      title: 'Firebase',
+      text: `${t('skills.firebase')}`,
+    },
+
     {
       id: 6,
       icon: FaBootstrap,
@@ -61,16 +77,16 @@ export default function Skills() {
       text: `${t('skills.bootstrap')}`,
     },
     {
-      id: 7,
-      image: true,
-      title: 'Firebase',
-      text: `${t('skills.firebase')}`,
-    },
-    {
       id: 8,
       icon: FaGithub,
       title: 'GitHub',
       text: `${t('skills.github')}`,
+    },
+    {
+      id: 9,
+      icon: FaNode,
+      title: 'Node js',
+      text: `${t('skills.node')}`,
     },
   ];
 
@@ -82,7 +98,7 @@ export default function Skills() {
       <SimpleGrid
         ref={containerRef}
         alignContent='center'
-        columns={{ base: 1, md: 2, lg: 4 }}
+        columns={{ base: 1, md: 2, lg: 5 }}
         gap={['15px']}
         opacity='0'
       >

@@ -37,13 +37,15 @@
     "javascript": "This language add the functionality to the web page. Requires logic and lateral think.",
     "react": "The JavaScript Framework created by Facebook. Im constantly learnig from this framework. This is one of my favorites.",
     "strapi": "Strapi is the next-gen headless CMS, open-source, javascript, enabling content-​rich experiences to be created, managed and exposed to any digital device.",
-    "bootstrap": "CSS framework for responsive web design. Also right now im learning Chakra UI for React",
+    "bootstrap": "CSS framework for responsive web design. Also right now im learning Chakra UI and MUI for React",
     "firebase": "Google application development platform that helps you build, improve, and grow your app",
-    "github": "Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects."
+    "github": "Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects.",
+    "node":"Node.js is one of the most used technologies in the industry. This platform takes advantage of all your knowledge in JavaScript and allows you to program the back-end part of the applications using that same language.",
+    "sql":"The SQL language is used to create and manage databases. Currently my level is basic to understand simple queries, although it is present in my work projects."
   },
   "about": {
     "title": "About",
-    "description": "Hi there! I am Lautaro Nasello, I am 23 years old and I live in Córdoba, Argentina. I love developing web applications! I also study Psychology at UNC. Sometimes my curiosity leads me to learn too many things which can be good or bad. I am interested in taking risks to improve my day to day. Applying the notions of this discipline helps me to create more intuitive and innovative products. I am interested in challenges and learning new things."
+    "description": "Hi there! I am Lautaro Nasello, I am 23 years old and I live in Córdoba, Argentina. I love developing web applications! I also study Psychology at UNC. The curiosity for the technologies push me to keep learning programming things all the time. I am interested in taking risks to improve my day to day. Applying the notions of this discipline helps me to create more intuitive and innovative products. I am interested in challenges and learning new things."
   },
   "navigate": {
     "language": "EN",
